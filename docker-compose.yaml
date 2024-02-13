@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  react-app:
+    build: .
+    # env_file: ./.env
+    # environment:
+    #   - VITE_APP_NAME=$VITE_APP_NAME
+    ports:
+      - $REACT_LOCAL_PORT:$REACT_DOCKER_PORT
